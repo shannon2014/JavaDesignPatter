@@ -40,6 +40,14 @@ public class PaperSubject implements Subject {
         }
     }
 
+    @Override
+    public boolean isRegister(Observer o) {
+        if (null == mList || !mList.contains(o)) {
+            return false;
+        }
+        return true;
+    }
+
     public void setPaper(PaperBean bean) {
         paperBean = bean;
         notifyObserver();
@@ -47,12 +55,5 @@ public class PaperSubject implements Subject {
 
     public PaperBean getPaper() {
         return paperBean;
-    }
-
-    public boolean isRegister(Observer o) {
-        if (null == mList || !mList.contains(o)) {
-            return false;
-        }
-        return true;
     }
 }

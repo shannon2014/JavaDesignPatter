@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_sub_switch"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="报纸更新"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/tv_sub"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="报纸出版商"
+        android:gravity="center"
+        android:layout_alignBottom="@id/tv_sub_switch"
+        android:layout_toRightOf="@id/tv_sub_switch"/>
+
+    <TextView
+        android:id="@+id/tv_read_1"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="阅读者1"
+        android:gravity="center"
+        android:layout_toRightOf="@id/tv_sub"
+        android:layout_marginLeft="20dp"
+        android:layout_alignBottom="@id/tv_sub_switch"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:id="@+id/tv_subscribe_1"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="订阅"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignBottom="@id/tv_read_1"
+        android:layout_toRightOf="@id/tv_read_1"/>
+
+    <TextView
+        android:id="@+id/tv_read_2"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="阅读者2"
+        android:gravity="center"
+        android:layout_toRightOf="@id/tv_sub"
+        android:layout_marginLeft="20dp"
+        android:layout_alignBottom="@id/tv_sub_switch"
+        android:layout_marginBottom="0dp"/>
+
+    <TextView
+        android:id="@+id/tv_subscribe_2"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="订阅"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignBottom="@id/tv_read_2"
+        android:layout_toRightOf="@id/tv_read_2"/>
+    <TextView
+        android:id="@+id/tv_read_3"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="阅读者3"
+        android:gravity="center"
+        android:layout_toRightOf="@id/tv_sub"
+        android:layout_marginLeft="20dp"
+        android:layout_alignBottom="@id/tv_sub_switch"
+        android:layout_marginBottom="-40dp"/>
+
+    <TextView
+        android:id="@+id/tv_subscribe_3"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="订阅"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignBottom="@id/tv_read_3"
+        android:layout_toRightOf="@id/tv_read_3"/>
+</RelativeLayout>
